@@ -1,10 +1,14 @@
 import { useState } from "react";
 
-export default function Bill() {
+export default function Bill({ bill, onSetBill }) {
   return (
     <div>
       <label>How much was the meal? </label>
-      <input type="text" placeholder="$45.99"></input>
+      <input
+        type="number"
+        value={bill}
+        onChange={(e) => onSetBill(Number(e.target.value))}
+      ></input>
     </div>
   );
 }
