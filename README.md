@@ -1,3 +1,19 @@
+This is a knowledge testing react project in order to gain some extra practice and sharpen skills within react and using useState.
+
+This project is loosely based on a challenge done within another course where the goal was to build a simple application that took a bill cost, and took the average of two percentages passed through in order to calculate a tip for the bill. The deliverables of the challenge are to display a total cost, the bill, and the calculated tip. These components are updated as the inputs placed in are changed. In order to build upon this project, first the basic application will be built out on these deliverables and then the goal is to make it more dynamic where the number of percentages passed through can be changed from two, to be based on the size of a group. For example: One day you want to use the application to calculate a tip based on you and a friend but the next day you want to use the application to calculate a tip based on you and three friends so you need the average of four percentages passed through.
+
+Basic concept:
+What is the bill? \_\_\_\_
+
+How many people in the party? 4
+
+How did you like the meal {person num}? \_**\_
+How did you like the meal {person num}? \_\_**
+How did you like the meal {person num}? \_**\_
+How did you like the meal {person num}? \_\_**
+
+Your total is \_\_\_\_ ({bill} + {bill \* ((sum of percentages / people in the party) / 100)})
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
