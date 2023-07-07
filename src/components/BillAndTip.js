@@ -15,6 +15,7 @@ export default function BillAndTip() {
   return (
     <>
       <div>
+        <h1>Calculate Your Tip Below</h1>
         <Bill bill={bill} onSetBill={setBill} />
         <Tip
           percent1={percent1}
@@ -22,11 +23,14 @@ export default function BillAndTip() {
           onSetPercent1={setPercent1}
           onSetPercent2={setPercent2}
         />
-        <p>Your tip suggestion: {percent1}%</p>
-        <p>Your friend's tip suggestion: {percent2}%</p>
-        <p>
-          Your total is ${bill + tip} (${bill} + ${tip} tip)
-        </p>
+        {bill > 0 ? (
+          <p className="total">
+            Your total is ${(bill + tip).toFixed(2)} (${bill} + $
+            {tip.toFixed(2)} tip)
+          </p>
+        ) : (
+          <p className="total">Enter your bill to see the total</p>
+        )}
       </div>
     </>
   );

@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #fff9db;
+}
+
+@media (max-width: 414px) {
+  h1 {
+    margin-bottom: 2em;
+    color: #411604;
+  }
+
+  .bill {
+    margin: 1em 0.4em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .bill label {
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #571d06;
+  }
+  .bill input {
+    font-size: 1.2em;
+    width: 4em;
+    border: none;
+    border-radius: 0.3em;
+    box-shadow: 1px 1.5px 3px;
+    background-color: #fffdf4;
+  }
+  .tips {
+    margin-top: 2em;
+    /* font-size: 1.4em; */
+  }
+
+  .tips label {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #98320b;
+  }
+  .tips select {
+    border-radius: 0.3em;
+    border: none;
+    font-size: 1.2em;
+    width: 18em;
+    box-shadow: 1px 1px 2px;
+    background-color: #fffdf4;
+  }
+
+  .tips div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .total {
+    margin-top: 2em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #c3410e;
+  }
+}

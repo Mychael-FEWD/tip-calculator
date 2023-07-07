@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Bill({ bill, onSetBill }) {
   return (
-    <div>
+    <div className="bill">
       <label>How much was the meal? </label>
       <input
         type="number"

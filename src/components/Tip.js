@@ -8,9 +8,9 @@ export default function Tip({
   onSetPercent2,
 }) {
   return (
-    <>
+    <div className="tips">
       <TipPercent percent={percent1} onSetPercent={onSetPercent1} />
       <TipPercent percent={percent2} onSetPercent={onSetPercent2} />
-    </>
+    </div>
   );
 }
